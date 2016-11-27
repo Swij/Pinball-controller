@@ -1,0 +1,9 @@
+# Backup files
+*.bak
+
+# Files created by kicad
+/controller-PCB/*
+!/controller-PCB/controller.kicad_pcb
+!/controller-PCB/controller.pro
+!/controller-PCB/controller.sch
+!/controller-PCB/controller.net

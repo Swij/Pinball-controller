@@ -3,9 +3,9 @@
 *.save
 *.save.1
 
-# Files created by kicad
+# Ignore all unnecessary files created by kicad
 /controller-PCB/*
 !/controller-PCB/controller.kicad_pcb
-!/controller-PCB/controller.pro
+!/controller-PCB/controller-handmade.kicad_pcb
 !/controller-PCB/controller.sch
-!/controller-PCB/controller.net
+!/controller-PCB/no-box.kicad_wks

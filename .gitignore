@@ -1,5 +1,7 @@
 # Backup files
 *.bak
+*.save
+*.save.1
 
 # Files created by kicad
 /controller-PCB/*

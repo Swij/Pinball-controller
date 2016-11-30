@@ -28,18 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:w_analog
-LIBS:w_connectors
-LIBS:w_device
-LIBS:w_logic
-LIBS:w_memory
-LIBS:w_microcontrollers
-LIBS:w_opto
-LIBS:w_relay
-LIBS:w_rtx
-LIBS:w_transistor
-LIBS:w_vacuum
-LIBS:ESP8266
+LIBS:controller-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -141,7 +130,7 @@ F 3 "" H 8150 3800 50  0000 C CNN
 	1    8150 3800
 	1    0    0    -1  
 $EndComp
-Text GLabel 8450 3300 2    60   Input ~ 0
+Text GLabel 8900 3300 2    60   Input ~ 0
 VCC
 $Comp
 L +12V #PWR07
@@ -236,7 +225,7 @@ L C C1
 U 1 1 582E7E47
 P 7650 3550
 F 0 "C1" H 7675 3650 50  0000 L CNN
-F 1 "4.7uF" H 7675 3450 50  0000 L CNN
+F 1 "10uF" H 7675 3450 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7688 3400 50  0001 C CNN
 F 3 "" H 7650 3550 50  0000 C CNN
 	1    7650 3550
@@ -427,7 +416,7 @@ Wire Wire Line
 Wire Wire Line
 	7650 3700 7650 3750
 Wire Wire Line
-	7650 3750 8150 3750
+	7650 3750 8650 3750
 Connection ~ 8150 3750
 Wire Wire Line
 	4800 1900 4800 2000
@@ -649,4 +638,22 @@ Wire Wire Line
 	3200 4200 3100 4200
 Wire Wire Line
 	3100 4200 3100 4100
+$Comp
+L C C2
+U 1 1 583EEE2A
+P 8650 3550
+F 0 "C2" H 8675 3650 50  0000 L CNN
+F 1 "10uF" H 8675 3450 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 8688 3400 50  0001 C CNN
+F 3 "" H 8650 3550 50  0000 C CNN
+	1    8650 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8650 3750 8650 3700
+Wire Wire Line
+	8650 3400 8650 3300
+Wire Wire Line
+	8450 3300 8900 3300
+Connection ~ 8650 3300
 $EndSCHEMATC
